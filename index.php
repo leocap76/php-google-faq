@@ -74,11 +74,11 @@ Scopri quali misure adottiamo per garantire protezione e sicurezza alle tue info
       <?php for ($i=0; $i < count($googleFaq) ; $i++) {
       ?>
         <h2>
-          <?php echo $googleFaq[$i]["question"]; ?>
+          <?php echo $googleFaq[$i]["question"] . "<br>"; ?>
         </h2>
 
         <h3>
-          <?php echo $googleFaq[$i]["answer"]; ?>
+          <?php echo $googleFaq[$i]["answer"] . "<br>"; ?>
         </h3>
 
       }

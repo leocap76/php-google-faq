@@ -57,7 +57,7 @@ Scopri quali misure adottiamo per garantire protezione e sicurezza alle tue info
   <body>
     <div class="container">
 
-      <?php
+      <!-- <?php
       echo $googleFaq[0]["question"] . "<br>" . $googleFaq[0]["answer"];
       ?>
       <?php
@@ -68,7 +68,20 @@ Scopri quali misure adottiamo per garantire protezione e sicurezza alle tue info
       ?>
       <?php
       echo $googleFaq[3]["question"] . "<br>" . $googleFaq[3]["answer"];
+      ?> -->
+
+      <!-- ciclo for -->
+      <?php for ($i=0; $i < count($googleFaq) ; $i++) {
       ?>
+        <h2>
+          <?php echo $googleFaq[$i]["question"]; ?>
+        </h2>
+
+        <h3>
+          <?php echo $googleFaq[$i]["answer"]; ?>
+        </h3>
+
+      }
 
     </div>
   </body>

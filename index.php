@@ -52,6 +52,7 @@ Scopri quali misure adottiamo per garantire protezione e sicurezza alle tue info
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
+    <link rel="stylesheet" href="css/style.css">
     <title>Google-faq</title>
   </head>
   <body>
@@ -71,7 +72,7 @@ Scopri quali misure adottiamo per garantire protezione e sicurezza alle tue info
       ?> -->
 
       <!-- ciclo for -->
-      <?php for ($i=0; $i < count($googleFaq) ; $i++) {
+      <!-- <?php for ($i=0; $i < count($googleFaq) ; $i++) {
       ?>
         <h2>
           <?php echo $googleFaq[$i]["question"] . "<br>"; ?>
@@ -81,8 +82,20 @@ Scopri quali misure adottiamo per garantire protezione e sicurezza alle tue info
           <?php echo $googleFaq[$i]["answer"] . "<br>"; ?>
         </p>
 
-      <?php  } ?>
+      <?php  } ?> -->
 
+    <!-- foreach -->
+
+    <?php foreach ($googleFaq as $value) { ?>
+
+      <h2>
+        <?php echo $value["question"] . "<br>"; ?>
+      </h2>
+
+      <p>
+        <?php echo $value["answer"] . "<br>"; ?>
+      </p>
+    <?php } ?>
     </div>
   </body>
 </html>
